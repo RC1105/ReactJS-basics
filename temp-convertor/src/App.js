@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <b>TEMPERATURE CONVERTOR</b><br/>
-        <label>Celcius</label>
+        <label>Celsius</label>
         <input label="Temperature (in C)" value={tmpC} onChange={(event)=>{
           settmpc(event.target.value)
           var f=fx(event.target.value,'C');
@@ -27,14 +27,14 @@ function App() {
         }}></input>
 
 
-        <label>Farheniet</label><br/>
+        <label>Fahrenheit</label>
         <input label="Temperature (in F)" value={tmpF} onChange={(event)=>{
           settmpf(event.target.value)
           var c=fx(event.target.value,'F');
           settmpc(c);
         }}></input>
         <br/>
-        Celcius - {tmpC}  Farheniet - {tmpF}
+        Celsius - {tmpC}  Fahrenheit - {tmpF}
         <hr/>
         <hr/>
         <br/>
